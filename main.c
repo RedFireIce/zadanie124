@@ -6,12 +6,12 @@ int main()
 for(;;)
 {
 int c=68 ;
-int a;
-int b;
-int wynik;
-int pods;
-int h;
-int wynik2;
+float a;
+float b;
+float wynik;
+float pods;
+float h;
+float wynik2;
 int t;
 printf("wybierz cos\n");
 printf("1.pole ptostokata\n");
@@ -25,21 +25,30 @@ switch (c)
 case 1:
 
     printf("wprowadz a\n");
-    scanf("%d", &a);
+    scanf("%f", &a);
     printf("wprowadz b\n");
-    scanf("%d", &b);
+    scanf("%f", &b);
     wynik = a*b;
-    printf("wynik=" "%d\n", wynik);
+    printf("wynik=" "%f\n", wynik);
+    if (wynik<=0)
+    {
+        printf("wprowadzono zle wartosci\n");
+    };
     scanf("%d", &t);
     break;
 case 2:
 
     printf("wprowadz podstawe trojkata\n");
-    scanf("%d", &pods);
+    scanf("%f", &pods);
     printf("wprowadz wysokosc trojkata\n");
-    scanf("%d", &h);
+    scanf("%f", &h);
     wynik2 = 0.5*pods*h;
-    printf("wynik=" "%d\n", wynik2);
+    printf("wynik=" "%f\n", wynik2);
+    if (wynik2<= 0)
+    {
+        printf("wprowadzono zle wartosci\n");
+    };
+
     break;
 
 case 3:
