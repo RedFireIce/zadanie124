@@ -32,8 +32,17 @@ case 1:
     printf("wynik=" "%d\n", wynik);
     scanf("%d", &t);
     break;
-
 case 2:
+
+    printf("wprowadz podstawe trojkata\n");
+    scanf("%d", &pods);
+    printf("wprowadz wysokosc trojkata\n");
+    scanf("%d", &h);
+    wynik2 = 0.5*pods*h;
+    printf("wynik=" "%d\n", wynik2);
+    break;
+
+case 3:
     exit;
 }
     return 0;
